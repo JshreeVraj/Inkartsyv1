@@ -1,61 +1,184 @@
 body{
-    margin: 0;
-    padding: 0;
-    background: #000;
-    overflow: hidden;
+  background-image: url(https://inspirationhut.net/wp-content/uploads/2013/05/201.png);
+  font-family: 'EB Garamond', serif;
+}
 
+.header{
+display: flex;
+flex-direction: row;
+  }
+.row{
+  padding-top: 30px;
+  width: 80%;
+}
+.logo{
+  width: 15%;
+  padding-left: 15px;
+  
+}
+.head{
+  display: flex;
+flex-direction: row;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+h5{
+  padding-top: 30px;
+  font-family: 'Tangerine', cursive;
+  font-size: 30pt;
+}
+a{
+  color: black;
+}
+#contact{
+  background-color: black;
+  color: aliceblue;
+  height: 80%;
+
+}
+.fa fa-copyright{
+  flex-direction: row;
 }
 .carousel{
-height: 600px;
-transform: translateY(-150px);
-
-}
-.carousel .carousel-item{
-    width: 400px;
-}
-.carousel .carousel-item img{
-width: 100%;
-border-radius: 5px;
-}
-.carousel-item h3{
-width: 50%;
-  padding: 20px;
-  position: fixed;
-  background-color: #00000040;
-  color: aliceblue;
-  bottom: -50px;
-  font-family: 'Tangerine', cursive;
-  transition: 0.5s ease-in-out bottom;
-}
-.carousel-item h3:hover{
-    bottom: 0;
-    background-color: black;
-    color: aliceblue;
-
-}
-
-.order{
-    transform: translateY(-100px);
-    color: #000;
-    background-color:white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 700px;
+  transform: translateY(-100px);
+  
+  }
+  .carousel .carousel-item{
+      width: 400px;
+  }
+  .carousel .carousel-item img{
+  width: 100%;
+  border-radius: 5px;
+  }
+#credit 
+{
+    width: 100%;
+    margin: auto;
+    padding-top: 30px;
     text-align: center;
-    border-radius: 10px;
-    width: max-content;
-    height: 50px;
-    margin: 0;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
-h2{
-    color: aliceblue;
-    font-family: 'Tangerine', cursive;
-    font-size: 112px;
+#credit a
+{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+#credit a::after
+{
+content: "";
+background: white;
+mix-blend-mode: exclusion;
+width: calc(100% + 18px);
+height: 0;
+position: absolute;
+bottom: -4px;
+left: -10px;
+transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+#credit a:hover::after
+{
+    height: calc(100% + 8px)
+}
+h4{
+  padding-left: 40px;
+}
+.small-img-row{
+  display: inline-flex;
+}
+.small-img-col{
+  display: flex;
+  margin: auto;
+  cursor: pointer;
+  padding-right: -15px;
+}
+.heading:hover{
+  display: inline-block;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+}
+.modal1{
+ 
+  justify-content: center;
+  padding-bottom: 70px;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+.btn modal-trigger{
+color: black;
+background-color: antiquewhite;
+}
+.quote{
+  padding-top: 30px;
+padding-bottom: -30px;
 }
 
-.fixed-action-btn{
-    bottom: 30px;
+#allcomments {
+  width: 90%;
+  margin: 1em 0 4em 1em;
+  padding: 1%;
+  border: solid 1px gray;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px silver;
 }
 
-.fa fa-paint-brush{
-    color: aliceblue;
+ul#pastcomments {
+  list-style-type: none;
+}
+
+ul#pastcomments li:before {
+  font-family: FontAwesome;
+  content: "\f10d";
+  font-size: 8pt;
+  color: black;
+  margin-left: -42px;
+  padding-right: 10px;
+  position: relative;
+}
+
+ul#pastcomments li {
+  margin: 0 0 0.5em 0;
+  
+}
+
+ul#pastcomments li span {
+  font-size: 80%;
+  color: gray;
+  font-style: italic;
+}
+
+form#newcomment textarea {
+  height: 72px;
+}
+
+form#newcomment label {
+  display: inline-block;
+  margin: 1em 0 0 0;
+}
+
+form#newcomment textarea,
+form#newcomment input[type="text"] {
+  margin-top: 0;
+}
+.comments{
+  text-align: center;
+ background-color:lightgrey;
+ width: 80%;
+}
+.block{
+  display: inline-block;
+  color: white;
+  background-color: black;
+  border-radius: 3px;
+  font-size: 20pt;
+}
+.quote{
+  padding-top: 80px;
 }
